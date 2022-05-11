@@ -1,7 +1,8 @@
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-  }
+  /* GRID
+  ---------
+  uses flexbox to style the grid
+  
+  */
   
   #flex-container {
     display: flex;
