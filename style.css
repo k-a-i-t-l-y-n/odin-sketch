@@ -3,7 +3,7 @@
   uses flexbox to style the grid
   
   */
-  
+
   #flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -16,4 +16,15 @@
     border: 1px solid #ddd;
     width: 100px;
     height: 100px;
+  }
+
+  /* HOVER
+  -----------
+  change the background color of the cell when the
+  mouse hovers over it 
+  */
+
+  .hover
+  {
+    background-color: #353935;
   }
