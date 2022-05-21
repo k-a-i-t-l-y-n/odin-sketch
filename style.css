@@ -4,18 +4,17 @@
   
   */
 
-  #flex-container {
-    display: flex;
-    flex-wrap: wrap;
+  #grid-container {
+    display: grid;
+    height: 70%;
+    width: 70%;
     gap: 5px;
-    margin: auto;
-    width: 115em;
   }
   
-  .flex-item {
+  .grid-item {
     border: 1px solid #ddd;
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
   }
 
   /* HOVER
