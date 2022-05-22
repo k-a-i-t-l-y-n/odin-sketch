@@ -45,13 +45,51 @@ function removeAllChildNodes(parent) {
 }
 
 
-let button = document.getElementById("grid-btn");
+let gridbutton = document.getElementById("grid-btn");
 
-button.addEventListener("click", function () {
-  gridSize = parseInt(prompt("Grid Size: "));
+gridbutton.addEventListener("click", function () {
+  do{
+    gridSize = parseInt(prompt("Grid Size: "));
+  }while(gridSize > 100);
+
   removeAllChildNodes(container);
   makeGrid(gridSize, gridSize);
 });
 
-document.body.appendChild(button);
+
+let colorButton = document.getElementById("color-btn");
+
+colorButton.addEventListener("click", function () {
+  console.log("Color Event");
+  container.addEventListener("mouseover", function (e) {
+    console.log("Hover Event");
+    if (e.target.matches('.grid-item')) {
+      console.log("Target Matched");
+      e.target.style.backgroundColor = randomRGBValue();
+    }
+    console.log("Color Change");
+  });
+});
+
+let clearButton = document.getElementById("clear-btn");
+
+clearButton.addEventListener("click", removeChildrenProperty(container, backgroundColor));
+
+function randomRGBValue(){
+  let r, g, b;
+  r = Math.floor(Math.random() * 256);
+  g = Math.floor(Math.random() * 256);
+  b = Math.floor(Math.random() * 256);
+
+  return "rgb(" + r + "," + g + ","+ b + ")";
+}
+
+function removeChildrenProperty(parent, styleProperty){
+  children = parent.childNodes;
+
+  for(let i = 0; i < children.legnth; i++)
+  {
+    children[i].style.styleProperty = null;
+  }
+}
 

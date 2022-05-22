@@ -25,7 +25,12 @@
     height: 100px; */
   }
 
-  #grid-btn{
+  .btn-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .btn{
     font-size: 30pt;
     height: 75px;
     width: 200px;
