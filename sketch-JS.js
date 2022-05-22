@@ -45,12 +45,7 @@ function removeAllChildNodes(parent) {
 }
 
 
-let button = document.createElement("button");
-button.setAttribute(
-  "style",
-  "height: 50px; width: 50px; text-align: center; "
-);
-
+let button = document.getElementById("grid-btn");
 
 button.addEventListener("click", function () {
   gridSize = parseInt(prompt("Grid Size: "));
