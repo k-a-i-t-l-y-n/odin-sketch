@@ -1,4 +1,17 @@
+  h1{
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 6em;
+    margin-top: 32px;
+    padding: 5px;
+    border: solid 10px #82ABA1;
+    margin-bottom: 0;
+    color: #ffb347;
+    background-color: #fff;
+    width: 100%;
+  }
+  
   .body-container{
+    background-color: #94FBAB;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -11,40 +24,42 @@
   uses flexbox to style the grid
   
   */
+  #header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   #grid-container {
-    margin: 20px auto;
+
+    margin: auto;
     display: grid;
-    height: 70%;
+    height: 50%;
     gap: 5px;
   }
   
   .grid-item {
+    background-color: #fff;
     border: 1px solid #ddd;
-    /* width: 100px;
-    height: 100px; */
   }
 
   .btn-container{
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
+    margin-top: 10px;
   }
   .btn{
-    font-size: 30pt;
-    height: 75px;
-    width: 200px;
-    border: solid black 2px;
+    font-size: 20pt;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #000;
+    background-color: #A9FFF7;
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    width: 150px;
+    border: solid #000 2px;
+    box-shadow: 2px 5px #000;
     border-radius: 20px;
-  }
-
-  /* HOVER
-  -----------
-  change the background color of the cell when the
-  mouse hovers over it 
-  */
-
-  .hover
-  {
-    background-color: #353935;
   }
